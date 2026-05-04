@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* soft gradient background */
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 40%, rgba(255, 77, 166, 0.15), transparent 40%),
+              radial-gradient(circle at 70% 60%, rgba(255, 20, 147, 0.1), transparent 50%);
+  filter: blur(80px);
+  z-index: 0;
+}
+
+/* center content */
+.container {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* title */
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #ff66b2;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 102, 178, 0.5);
+}
+
+/* subtitle */
+.subtitle {
+  margin-top: -10px;
+  font-size: 1rem;
+  color: #ffb3d9;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+
+/* glass card */
+.glass {
+  margin-top: 40px;
+  padding: 25px 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 105, 180, 0.2);
+  text-align: center;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+/* button */
+.btn {
+  margin-top: 30px;
+  padding: 10px 28px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 105, 180, 0.4);
+  background: transparent;
+  color: #ff99cc;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: rgba(255, 105, 180, 0.1);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+}
